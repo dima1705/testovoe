@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Golos Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.block-page {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.block-label {
+    position: absolute;
+    top: 0;
+    left: 74px;
+    font-size: 14px;
+    color: #888888;
+    text-transform: lowercase;
+}
+
+.content {
+    padding: 60px 74px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.footer {
+    padding: 0 74px;
+    padding-bottom: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-text {
+    font-size: 120px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 60px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.main-text img {
+    display: inline-block;
+    height: 84px;
+    margin: 0 8px;
+    object-fit: cover;
+    border-radius: 42px;
+}
+
+.main-text img:nth-of-type(1) {
+    width: 320px;
+}
+
+.main-text img:nth-of-type(2) {
+    width: 360px;
+}
+
+.main-text img:nth-of-type(3) {
+    width: 160px;
+}
+
+.main-text img:nth-of-type(4) {
+    width: 360px;
+}
+
+.button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.button-wrapper::before,
+.button-wrapper::after {
+    content: '';
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 0;
+}
+
+.call-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 30px 56px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
+    min-width: fit-content;
+    width: auto;
+    max-width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(30px 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 30px 100%, 0 50%);
+    clip-path: polygon(30px 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 30px 100%, 0 50%);
+}
+
+.call-button:hover {
+    background-color: #f0f0f0;
+}
+
+.call-button:active {
+    background-color: #e0e0e0;
+}
+
+
+
+@media (max-width: 768px) {
+    .content {
+        padding: 40px 74px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .footer {
+        padding: 0 74px;
+        padding-bottom: 40px;
+    }
+
+    .main-text {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .main-text img {
+        height: 63px;
+    }
+
+    .main-text img:nth-of-type(1) {
+        width: 240px;
+    }
+
+    .main-text img:nth-of-type(2) {
+        width: 270px;
+    }
+
+    .main-text img:nth-of-type(3) {
+        width: 120px;
+    }
+
+    .main-text img:nth-of-type(4) {
+        width: 270px;
+    }
+
+    .button-wrapper::before {
+        margin-right: 8px;
+    }
+
+    .button-wrapper::after {
+        margin-left: 8px;
+    }
+
+    .call-button {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 30px 20px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .footer {
+        padding: 0 20px;
+        padding-bottom: 30px;
+    }
+
+    .main-text {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .main-text img {
+        height: 42px;
+        margin: 0 4px;
+    }
+
+    .main-text img:nth-of-type(1) {
+        width: 160px;
+    }
+
+    .main-text img:nth-of-type(2) {
+        width: 180px;
+    }
+
+    .main-text img:nth-of-type(3) {
+        width: 80px;
+    }
+
+    .main-text img:nth-of-type(4) {
+        width: 180px;
+    }
+
+    .button-wrapper::before {
+        margin-right: 6px;
+    }
+
+    .button-wrapper::after {
+        margin-left: 6px;
+    }
+
+    .call-button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
